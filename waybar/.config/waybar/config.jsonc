@@ -1,0 +1,54 @@
+{
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "custom/reboot",
+    "custom/power",
+    "temperature",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "clock"
+  ],
+  "clock": {
+    "format": "<span foreground='#eba0ac'>   </span>{:%a %b %d - %I:%M%p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      "on-click": "pavucontrol"
+  },
+  "custom/reboot": {
+    "format": "<span color='#f9e2af'> </span>",
+    "on-click": "systemctl reboot"
+  },
+  "custom/power": {
+    "format": "<span color='#f38ba8'> </span>",
+    "on-click": "systemctl poweroff"
+  },
+ "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 80,
+    "format": "{icon}  {temperatureC}°C",
+    "format-critical": "{icon}  {temperatureC}°C",
+    "format-icons": ["", "", ""]
+ },
+  "memory": {
+    "format": "<span color='#b4befe'>   </span>{used:0.1f}G/{total:0.1f}G ",
+    "tooltip": true,
+    "tooltip-format": "Memory: {used:0.2f}G/{total:0.2f}G"
+  },
+  "cpu": {
+    "format": "<span color='#FF9F0A'>  </span>{usage}% ",
+    "tooltip": true
+  }
+}
