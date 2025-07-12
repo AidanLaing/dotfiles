@@ -1,0 +1,35 @@
+width = 30%
+height = 30%
+
+font = monospace
+
+border-width = 4
+border-color = #585b70
+corner-radius = 16
+outline-width = 0
+
+result-spacing = 8
+num-results = 6
+
+background-color = #1e1e2e
+
+prompt-text = " run: "
+prompt-color = #a6e3a1
+prompt-padding = 32
+prompt-background = #313244
+prompt-background-padding = 0,16
+prompt-background-corner-radius = 8
+
+clip-to-padding = false
+
+text-color = #cdd6f4
+
+selection-color = #a6e3a1
+selection-background = #313244
+selection-background-padding = 0,16
+selection-background-corner-radius = 8
+
+
+anchor = center
+clip-to-padding = false
+
