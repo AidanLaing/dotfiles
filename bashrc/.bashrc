@@ -21,3 +21,4 @@ set -o vi
 # Set Neovim as the default editor
 export VISUAL='nvim'
 export EDITOR="$VISUAL"
+export ANDROID_HOME="$HOME/Android/Sdk"
