@@ -7,3 +7,5 @@ border-radius=8
 progress-color=#a6e3a1FF
 output=DP-1
 icon-path=/usr/share/icons/breeze-dark/
+max-icon-size=48
+icon-border-radius=4
