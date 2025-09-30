@@ -24,3 +24,5 @@ export EDITOR="$VISUAL"
 export ANDROID_HOME="$HOME/Android/Sdk"
 
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
+
+export PATH="$HOME/.local/bin:$PATH"
