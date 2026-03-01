@@ -13,7 +13,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval `keychain --eval --quiet id_ed25519`
+# eval `keychain --eval --quiet id_ed25519`
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
 
 # Set vi mode
 set -o vi
