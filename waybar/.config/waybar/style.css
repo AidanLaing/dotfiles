@@ -53,6 +53,7 @@ button:hover {
 
 #pulseaudio,
 #clock,
+#custom-clock,
 #battery,
 #cpu,
 #memory,
@@ -75,6 +76,11 @@ button:hover {
 }
 
 #clock {
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
+}
+
+#custom-clock {
     color: @maroon;
     border-bottom: 2px solid @maroon;
 }

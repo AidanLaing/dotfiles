@@ -13,7 +13,7 @@
     "cpu",
     "memory",
     "pulseaudio",
-    "clock"
+    "custom/clock"
   ],
   "clock": {
     "format": "<span foreground='#eba0ac'>   </span>{:%a %b %d - %I:%M%p}",
@@ -50,5 +50,11 @@
   "cpu": {
     "format": "<span color='#FF9F0A'>  </span>{usage}% ",
     "tooltip": true
+  },
+  "custom/clock": {
+    "exec": "date +'%a %b %d - %I:%M%p'",
+    "interval": 1,
+    "format": "<span foreground='#eba0ac'>   </span>{}",
+    "tooltip": false
   }
 }
